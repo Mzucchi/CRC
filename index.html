@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CRC Payroll provides a simple starting point for uploading payroll PDFs."
+    />
+    <title>CRC Payroll</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="site-header">
+        <a class="brand" href="/" aria-label="CRC Payroll home">
+          <span class="brand-mark" aria-hidden="true">C</span>
+          <span>CRC Payroll</span>
+        </a>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="page-title">
+          <p class="eyebrow">Payroll, simplified</p>
+          <h1 id="page-title">CRC Payroll</h1>
+          <p class="intro">
+            Upload a payroll PDF to get started. Your document will be ready for
+            processing once the next step is enabled.
+          </p>
+
+          <div class="upload-card">
+            <div class="upload-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5M5 14v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4" />
+              </svg>
+            </div>
+            <div class="upload-copy">
+              <h2>Upload payroll document</h2>
+              <p>Choose a PDF from your computer.</p>
+            </div>
+            <input id="pdf-upload" type="file" accept="application/pdf,.pdf" />
+            <label class="file-button" for="pdf-upload">Choose PDF</label>
+            <p class="file-status" id="file-status" aria-live="polite">No file selected</p>
+          </div>
+        </section>
+      </main>
+
+      <footer>Secure payroll workflows for CRC.</footer>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
